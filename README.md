@@ -2,21 +2,26 @@
 
 > Cliente Vue para utilizar con una API REST de banca online
 
-## Build Setup
+## Uso
 
 ``` bash
-# install dependencies
+# Clonar repositorio
+git clone https://github.com/pedroprieto/cliente-bank-app.git
+
+# Acceder a la carpeta
+cd cliente-bank-app
+
+# Instalar dependencias
 $ npm run install
 
-# serve with hot reload at localhost:3000
+# Testear en local. Acceso en localhost:3000. La API debe estar en marcha en localhost:5000
 $ npm run dev
 
-# build for production and launch server
+# Compilar aplicación para producción (el resultado estará en la carpeta dist)
 $ npm run build
-$ npm run start
 
-# generate static project
-$ npm run generate
+# (Opcional) Lanzar aplicación en modo producción
+$ npm run start
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
@@ -43,10 +48,12 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 ```
 
 ## Despliegue en S3
-1. Ejecutar `npm run build`
-2. Crear bucket en S3
-3. Configurar bucket como público
-4. Configurar bucket como contenedor de sitio web estático
-5. Subir contenido de carpeta `dist` al bucket
-6. Modificar todos los archivos y carpetas del bucket para que sean públicos (opción Hacer público)
-7. Acceder al punto de enlace del bucket para cargar el cliente web
+1. Ejecutar `npm run install` para instalar las dependencias de la aplicación
+2. Ejecutar `npm run build`
+3. Crear bucket en S3
+4. Configurar bucket como público
+5. Configurar bucket como contenedor de sitio web estático
+6. Subir contenido de carpeta `dist` al bucket
+7. Modificar todos los archivos y carpetas del bucket para que sean públicos (opción Hacer público)
+8. Acceder al punto de enlace del bucket para cargar el cliente web
+
