@@ -2,6 +2,12 @@
 
 > Cliente Vue para utilizar con una API REST de banca online
 
+## Demo
+http://bankapiclient.s3-website-eu-west-1.amazonaws.com/
+
+## API
+La aplicación con la API de banca online está disponible en https://github.com/pedroprieto/api-bank-app. Ambas aplicaciones deben estar funcionando para poder interactuar.
+
 ## Uso
 
 ``` bash
