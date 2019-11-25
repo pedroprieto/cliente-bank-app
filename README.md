@@ -2,9 +2,6 @@
 
 > Cliente Vue para utilizar con una API REST de banca online
 
-## Demo
-http://bankapiclient.s3-website-eu-west-1.amazonaws.com/
-
 ## API
 La aplicación con la API de banca online está disponible en https://github.com/pedroprieto/api-bank-app. Ambas aplicaciones deben estar funcionando para poder interactuar.
 
@@ -30,8 +27,6 @@ $ npm run build
 $ npm run start
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
-
 ## Creación de la aplicación
 
 1. Crear proyecto de Nuxt
@@ -47,7 +42,7 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 ```json
   "scripts": {
     "dev": "baseURL='http://localhost:5000' nuxt",
-    "build": "baseURL='http://nueva-env.qyt5jae7qv.eu-west-1.elasticbeanstalk.com' nuxt build",
+    "build": "baseURL='DIRECCION_DESPLIEGUE_API' nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
