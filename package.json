@@ -5,7 +5,7 @@
   "author": "Pedro Prieto",
   "private": true,
   "scripts": {
-    "dev": "baseURL='http://localhost:5000' nuxt",
+    "dev": "baseURL='https://localhost:5001' nuxt",
     "build": "baseURL='DIRECCION_DESPLIEGUE_API' nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"

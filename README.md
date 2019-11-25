@@ -17,7 +17,7 @@ cd cliente-bank-app
 # Instalar dependencias
 $ npm run install
 
-# Testear en local. Acceso en localhost:3000. La API debe estar en marcha en localhost:5000
+# Testear en local. Acceso en localhost:3000. La API debe estar en marcha en https://localhost:5001
 $ npm run dev
 
 # Compilar aplicación para producción (el resultado estará en la carpeta dist)
@@ -41,7 +41,7 @@ $ npm run start
 5. Modificar fichero `package.json` para que cree las variables de entorno necesarias para la conexión a la API en modo local y en modo producción
 ```json
   "scripts": {
-    "dev": "baseURL='http://localhost:5000' nuxt",
+    "dev": "baseURL='https://localhost:5001' nuxt",
     "build": "baseURL='DIRECCION_DESPLIEGUE_API' nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
