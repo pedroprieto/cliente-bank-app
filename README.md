@@ -33,6 +33,8 @@ $ npm run start
 ```
 
 ## Instrucciones de despliegue en AWS S3
+Dado que se trata de recursos estáticos (no precisan de lógica de servidor), el despliegue puede realizarse en un servicio como **S3**. Para mejorar su distribución se puede utilizar también un servicio de CDN como **CloudFront**.
+
 1. Ejecutar `npm install` para instalar las dependencias de la aplicación
 2. Modificar fichero `package.json` y cambiar `DIRECCION_DESPLIEGUE_API` con la URL de conexión a la API desplegada en AWS:
     ```json
